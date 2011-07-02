@@ -1,0 +1,55 @@
+<div class="info">Lista wszystkich wpisanych uzytkownikow</div>
+<p class="desc">Pierwsza tabela zawiea tylko osoby zyjaca, druga zas tylko zmarle.</p>
+<b>(Zywi/zmarli)</b><%= link_to 'Przelacz widok', '#', :onClick => "$('dead-users').toggle(); $('alive-users').toggle();" %>
+
+<br />
+<div class="desc" id="alive-users">Osoby zyjace
+<table class='table-blue'>
+<tr>
+ <th>lp.</th>
+ <th>Imie:</th>
+ <th>Nazwisko:</th>
+ <th>Miejsce urodzenia:</th>
+ <th>Data urodzenia:</th>
+ <th>Aktualny adres:</th>
+ <th>Aktualny wiek:</th>
+
+</tr>
+ <%  i = 0; @alive.to_a.each do |u| %>
+ <tr><% i+=1; p = u.users_data; %>
+  <td><%= i %></td> 
+  <td><a href="editById/<%= u.id %>"><%= u.imie %></a></td>
+  <td><a href="editById/<%= u.id %>"><%= u.nazwisko %></a></td>
+  <td><%= p.miejsce_urodzenia rescue nil  %></td>
+  <td><%= p.data_urodzenia rescue nil %></td>
+  <td><%= p.aktualny_adres rescue nil %></td>
+  <td><%= p.aktualny_wiek rescue nil %></td>
+ <tr>
+ <% end %>
+</table>
+</div>
+<div class="desc" id="dead-users" style="display:none">Osoby zmarle
+<table class='table-blue'>
+<tr>
+ <th>lp.</th>
+ <th>Imie:</th>
+ <th>Nazwisko:</th>
+ <th>Miejsce urodzenia:</th>
+ <th>Data urodzenia:</th>
+ <th>Przyczyna smierci:</th>
+ <th>Data smierci:</th>
+
+</tr>
+ <%  i = 0; @dead.to_a.each do |u| %>
+ <tr><% i+=1; p = u.users_data; %>
+  <td><%= i %></td> 
+  <td><a href="editById/<%= u.id %>"><%= u.imie %></a></td>
+  <td><a href="editById/<%= u.id %>"><%= u.nazwisko %></a></td>
+  <td><%= p.miejsce_urodzenia rescue nil  %></td>
+  <td><%= p.data_urodzenia rescue nil %></td>
+  <td><%= p.powod_zgonu rescue nil %></td>
+  <td><%= p.data_smierci rescue nil %></td>
+ <tr>
+ <% end %>
+</table>
+</div>

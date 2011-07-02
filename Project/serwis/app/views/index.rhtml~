@@ -1,0 +1,5 @@
+<p class="info">Zarzadzanie uzytkownikiem</p>
+<p class="desc">W tej chwili mozesz wybrac jedna z ponizszych opcji</p>
+
+<li><%= link_to "Dodanie/edycja osob z rodziny", :url => {:controller => "users", :action => "addNew"} %></li>
+<li><%= link_to "Przeglad uzytkownikow zapisanych w bazie", :url => {:controller => "users", :action => "show"} %></li>

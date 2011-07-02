@@ -1,0 +1,4 @@
+module EventHelper
+require 'rubygems'
+require 'composite_primary_keys'
+end

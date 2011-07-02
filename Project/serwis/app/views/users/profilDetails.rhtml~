@@ -1,0 +1,3 @@
+
+
+<b>Dokladniejszy widok profilu <%= @result.each {|i| i.imie } %></b>

@@ -1,0 +1,134 @@
+<style type="text/css">
+body {
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: small;
+   font-color: #000;
+   background-color: #cccccc;
+}
+a:link, a:active, a:visited {
+   color: #ffffff;
+}
+input { 
+   margin-bottom: 5px;
+}
+p { 
+   line-height: 150%;
+}
+
+div#container {
+   width: 650px;
+   margin: 0 auto;
+}
+
+div#header {
+   text-align: center;
+   padding-bottom: 2px;
+   color: #fffcca;
+   background-color: #214243;
+   border: 1px dashed #fffcca;
+   margin-bottom: 10px;
+   border-bottom: none;
+}
+
+div#linker {
+   text-align: center;
+   color: #fffcca;
+   text-weight: solid;
+   padding: 4px 0 4px 0;
+   background-color: #217050;
+   border: 1px dashed #fffcca;
+   border-top: none;
+   margin-top: -10px;
+   margin-bottom: 4px;
+}
+
+div#footer {
+   padding-top: 4px;
+   padding-bottom: 4px;
+   margin-top: 8px;
+   background-color: #214243;
+   border: 1px dashed #fffcca;
+   text-align: center;
+}
+
+.info {
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: #214243;
+   margin-bottom: 8px;
+}
+
+.desc {
+   font-size: 12px;
+   font-style: italic;
+   text-align: left;
+   color: #214243;
+   margin-bottom: 8px;
+   border-bottom: 1px solid #fffcca;
+}
+ 
+.errorExplanation {
+  background-color: #214243;
+  border: 2px solid #fffcca;
+  font-size: small;
+  color: white;
+  margin-bottom: 6px;
+}
+
+div#errorExplanation h2 {
+ text-align: center;
+}
+
+div#errorExplanation p {
+ text-align: center;
+}
+
+div#content {
+   width: 550px;
+   padding: 5px;
+   border: 2px dotted #fffcca;
+   margin: 0 auto;
+}
+
+p#panel {
+     margin: 5px 5px 5px 5px;
+     background-color: #214243;
+     border-bottom: 1px solid #fffcca;
+}
+
+</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;.
+charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>System zarzadzania baza 'rodzinka'</title>
+</head>
+<body id="library">
+<div id="container">
+<div id="header"><h1>Serwis rodzinka</h1><br />Stworzony z mysla o Tobie..</div>
+<div id="linker">
+<a href="users">Uzytkownicy</a>
+<a href="event">Wydarzenia</a>
+<a href="testaments">Spadki</a>
+<a href="contact">Kontakt</a>
+<a href="help">Pomoc</a>
+</div>
+<div id="content"><h3>Witaj serdecznie</h3>
+<p class="info">Za posrednictwem tego serwisu bedziesz mogl drogi uzytkowniku:<br />
+Prowadzic baze o swoich czlonkach rodziny<br />
+W wygodny sposob przechowywac informacje o rodzinnych wydarzeniach<br />
+Ponadto bedziesz mogl zapisywac wazne dokumenty <br />
+<br />Nie wachaj sie i wyprobuj, wiec go juz teraz...</br />
+</p>
+</div>
+
+
+<div id="footer">Powered by Ruby on Rails 2009, autor: <b><a href="mailto:unantastbar2@freenet.de">Piotr Walkowski</a></b></div>
+</div>
+</body>
+</html>

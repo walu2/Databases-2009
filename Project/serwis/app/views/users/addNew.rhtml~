@@ -1,0 +1,59 @@
+<div class="info">Dodawanie uzytkownika</div>
+<p class="desc">W tym miejscu mozesz swobodnie dodawac nowych uzytkownikow.</p>
+ <%= error_messages_for :object => [@users, @profiles] rescue nil %>
+
+   <% if !flash[:send].nil? %>
+     <p class="added"><%= flash[:send] %></p>
+   <% end %>
+
+ <table>
+ <tr>
+ <% form_tag  :action => 'addNew' do %>
+    <td>Imie:</td>
+    <td><%= text_field :users, :imie %></td>
+ </tr>
+ <tr>
+  <td>Nazwisko:</td>
+  <td><%= text_field :users, :nazwisko %></td>
+ </tr>
+ <tr>
+  <td>Ojciec uzytkownika: </td>
+  <td><%= select( :users, :id_ojca, Users.getAllPeoplesBySex('m')  ) %></td></td>
+ </tr>
+ <tr>
+  <td>Matka uzytkownika: </td>
+  <td><%= select( :users, :id_matki, Users.getAllPeoplesBySex('f') ) %></td></td>
+ </tr>
+ <tr>
+   <td>Miejsce urodzenia:</td>
+   <td><%= text_field :profiles, :miejsce_urodzenia %></td>
+ </tr>
+ <tr>
+   <td>Data urodzenia:</td>
+   <td><%= text_field :profiles, :data_urodzenia %></td>
+ </tr>
+ <tr>
+   <td>Testament:</td>
+   <td><%=  check_box :users, :testament, {}, TRUE, FALSE %></td>
+ </tr>  
+ <tr>
+   <td>Adres:</td>
+   <td><%= text_field :profiles, :aktualny_adres %></td>
+ </tr>
+</table>
+  <p align="right"><b>Profil dotyczy zmarlego: </b><%= check_box :dead, :status, { :onclick => '$("user-dead").toggle();' } %></p>
+<table id='user-dead' style='display: none'>
+ <tr>
+   <td>Powod zgonu:</td>
+   <td><%= text_area :profiles, :powod_zgonu, :cols => 35, :rows => 4 %></td>
+ </tr>
+ <tr>
+   <td>Data smierci:</td>
+   <td><%= text_field :profiles, :data_smierci %></td>
+ </tr>
+</table>
+ <br />Utworz: <%= submit_tag 'Utworz' %>
+ <% end %> 
+
+
+

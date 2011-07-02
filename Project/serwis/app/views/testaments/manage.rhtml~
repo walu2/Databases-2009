@@ -1,0 +1,32 @@
+<%= javascript_include_tag :defaults %>
+
+<h1>Wybierz osobe, ktora przydzieli spadek.</h1>
+ <table>
+ <% form_tag  :action => 'manageById' do %>
+ <tr> 
+   <td>Imie i nazwisko:</td>
+    <td><%= select :tes, :user_id, Events.UserToHashMapHelper(@possibleUsers) %></td>
+ </tr>
+ <tr>
+  <td>Kwota:</td>
+  <td><%= text_field :tes, :money %></td>
+ </tr>
+ <tr>
+  <td>Ilosc osob:</td>
+  <td> <%= select :tes, :howMany, Testaments.generateBlock(10) %></td>
+ </tr>
+ <tr>
+  <td>Zatwierdz: </td><td><%= submit_tag 'Utworz' %></td>
+ </tr>
+ <% end %> 
+
+</table>
+
+<%=  link_to_function("Show me more", nil ) do |page|
+    page[:add_subject].visual_effect  :toggle_blind
+    page[:add_subject].replace_html "Show me less"
+     end
+ %>
+
+<div id="add_subject" style="display:none; " >ddaadsadsadsadsadsads</div>fff
+

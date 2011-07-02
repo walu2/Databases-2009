@@ -1,0 +1,51 @@
+Script started on Tue 16 Jun 2009 12:13:41 AM CEST
+]0;prezes@hp-omen: ~/BD2009Proprezes@hp-omen:~/BD2009Pro$ dir
+app	db   generate  log     Rakefile  script  tmp
+config	doc  lib       public  README	 test	 vendor
+]0;prezes@hp-omen: ~/BD2009Proprezes@hp-omen:~/BD2009Pro$ cd app
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ dir
+controllers  helpers  models  views
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ rakke[K[Ke -T | gre[K[Krep "gems:"
+rake gems:build                      # Build any native extensions for unpacked gems
+rake gems:install                    # Installs all required gems for this application.
+rake gems:refresh_specs              # Regenerate gem specifications in correct format.
+rake gems:unpack                     # Unpacks the specified gem into vendor/gems.
+rake gems:unpack:dependencies        # Unpacks the specified gems and its dependencies into vendor/gems
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ rame [K[K[Kke gems:freeze GEM=map_by_method
+(in /home/prezes/BD2009Pro)
+rake aborted!
+Don't know how to build task 'gems:freeze'
+
+(See full trace by running task with --trace)
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ rake gems:freeze GEM=map_by_method[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kinstall
+(in /home/prezes/BD2009Pro)
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ rake gems:install[K[K[K[K[K[K[Kbuild
+(in /home/prezes/BD2009Pro)
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ rake gems:build[K[K[K[K[K[K
+(in /home/prezes/BD2009Pro)
+
+I = Installed
+F = Frozen
+R = Framework (loaded before rails starts)
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ [Kprezes@hp-omen:~/BD2009Pro/app$ rake gems[K[K[K[K[K[Ke gems:unpack
+(in /home/prezes/BD2009Pro)
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ r[Krake gems:unpack[K[K[K[K[K[Krefresh_specs
+(in /home/prezes/BD2009Pro)
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ sum[Kdo gem install composite_primary_keys
+[sudo] password for prezes: 
+Successfully installed composite_primary_keys-2.2.2
+1 gem installed
+Installing ri documentation for composite_primary_keys-2.2.2...
+Installing RDoc documentation for composite_primary_keys-2.2.2...
+]0;prezes@hp-omen: ~/BD2009Pro/appprezes@hp-omen:~/BD2009Pro/app$ cd /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support
+]0;prezes@hp-omen: /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_supportprezes@hp-omen:/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support$ kate dependencies.rb
+kate(18309): createDoc
+kate(18309) KateSessionManager::KateSessionManager: LOCAL SESSION DIR:  "/home/prezes/.kde/share/apps/kate/sessions"
+kate(18309) KateApp::initKate: Setting KATE_PID: ' 18309 '
+kate(18309) KateViewDocumentProxyModel::updateBackgrounds: false
+kate(18309) KateMainWindow::KateMainWindow: **************************************************************************** 0x80eea58
+kate(18309) KateViewDocumentProxyModel::updateBackgrounds: false
+kate(18309) KateViewDocumentProxyModel::updateBackgrounds: false
+kate(18309) KateDocManager::slotDocumentNameChanged: docname changed:  "Untitled" -----> "Untitled"
+kate(18309) KateDocManager::slotDocumentNameChanged: docname changed:  "Untitled" -----> "dependencies.rb"
+kate(18309) KateViewDocumentProxyModel::updateBackgrounds:

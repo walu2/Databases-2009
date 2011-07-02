@@ -1,0 +1,21 @@
+<h1>Tutaj mozna dodawac nowe wydarzenia</h1>
+
+ <%= error_messages_for :object => [@events] rescue nil %>
+  
+ <table>
+ <tr>
+ <% form_tag  :action => 'addEvent' do %>
+    <td>Miejsce:</td>
+    <td><%= text_field :event, :miejsce %></td>
+ </tr>
+ <tr>
+  <td>Rodzaj wydarzenia:</td>
+  <td><%= select( :event, :miejsce, { "Pogrzeb" => "0", "Slub" => "1", "Rozwod" => "2"}) %></td>
+ </tr>
+ <tr>
+   <td>Data:</td>
+   <td><%= text_field :event, :data %></td>
+ </tr>
+ <% end %> 
+
+</table>

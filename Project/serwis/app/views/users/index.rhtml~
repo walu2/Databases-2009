@@ -1,0 +1,5 @@
+<p class="info">Zarzadzanie uzytkownikiem</p>
+<p class="desc">W tej chwili mozesz wybrac jedna z ponizszych opcji</p>
+
+<%= link_to "Dodanie osob do rodzinnej bazy", {:action => "addNew"} %> - dodawanie badz zmiana zapisanych uzytkownikow<br />
+<%= link_to "Przeglad uzytkownikow", {:action => "show"} %> - Lista zapisanych uzytkownikow (bez mozliwosci edycji)

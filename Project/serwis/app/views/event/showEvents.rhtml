@@ -1,0 +1,22 @@
+<div class="info">Zapisane wydarzenia</div>
+<p class="desc">Tutaj mamy do dyspozycji wszystkie wydarzenia zapisane do tej pory w bazie (wraz ze statystykami).</p>
+
+ <%  @allEvents.each do |u| %>
+
+<% miasto = (u.miejsce.nil?) ? "-" : u.miejsce; data =  (!u.data.nil?) ? u.data.strftime("%m/%d/%Y") : "?"; %>
+<%= Events.typeHelper(u.typ) + ' w miescie ' + miasto  + ', dnia: ' + data %><br />
+  <i>Lacznie gosci: <%= EventsUsers.count(:conditions => ["id_wydarzenia =?", u.id]) %> </i>
+   <br />
+   <b>Uczestnicy tego wydarzenia to: </b>
+   
+   <% participants = EventsUsers.find(:all, :conditions => ["id_wydarzenia =?", u.id]); out = ""; %>
+ 
+   <%  participants.to_a.each do |pp| %>
+      <% userdata = Users.find_by_id(pp.id_osoby) %>
+      <% out << userdata.imie + ' ' + userdata.nazwisko + ', ' %>
+   <% end %>
+   <%= out.to_s %>
+
+ <hr />
+
+ <% end %>

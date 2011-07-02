@@ -1,0 +1,55 @@
+
+
+class EventController < ApplicationController
+
+ def new
+  @events = Events.new
+  @userEvents = EventsUsers.new
+ end
+
+ def add
+  render :text => "xX"
+ end
+
+ def addEvent
+   if request.post? & flash[:send].nil? then
+    @events = Events.new(params[:events])
+
+     if @events.valid? then
+      @events.save! 
+      flash[:send] = "Wydarzenie dodano pomyslnie"; 
+     end
+
+   end
+ end
+
+ def index
+ end
+
+
+ def addUserEvent
+     @currentUsers = Users.getAllDataFromUsers
+     @currentEvents = Events.showAllEvents
+
+     if request.post? & flash[:send].nil? then
+     @userEvents = EventsUsers.new(params[:userEvent])
+
+     if @userEvents.valid? then
+      @userEvents.save! 
+      flash[:send] = "Pomyslnie zaktualizowano baze danych"; 
+     end
+
+       redirect_to :action => 'addUserEvent'
+   end
+ end
+
+ def showEvents
+   @allEvents = Events.showAllEvents  
+ end
+
+ def showUserEvents
+  render :text => 'lalala'
+ end 
+
+
+end

@@ -1,0 +1,27 @@
+
+
+class TestamentsController < ApplicationController
+
+ def new
+  @docs = Documents.new
+ end
+
+ def addNew
+   if request.post? & flash[:send].nil? then
+    
+    @currentEvents = Events.showAllEvents
+
+    @docs = Documents.new(params[:doc])
+
+     if @docs.valid? then
+      @docs.save! 
+     end
+
+      flash[:send] = true; 
+       
+       redirect_to :action => 'showEvents'; return nil
+   end
+ end
+
+
+end

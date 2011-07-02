@@ -1,0 +1,24 @@
+<% x = 'file:///home/prezes/BD2009Pro/public/files/'; %>
+
+<b>Wykaz dokumentow:</b>
+<br />
+<table>
+<tr>
+ <th>lp.</th>
+ <th>Opis:</th>
+ <th>Data zrobienia:</th>
+ <th>URL:</th>
+</tr>
+ <% i =0; @allDocs.to_a.each do |u| %>
+ <% event = Events.find_by_id(u.id_wydarzenia);  %> 
+  <tr><td colspan=3>
+    <% format = event.miejsce.to_s + '[' + Events.typeHelper(event.typ) + ']' + 'dnia: ' + event.data.strftime("%m/%d/%Y"); %>
+    <%= '<li>' + format + '</li>' %>
+  </td></tr>
+ <tr>
+  <td><%= u.opis rescue nil %></td>
+  <td><%= u.data_zrobienia rescue nil%></td>
+  <td><% link = ""; unless(u.sciezka_do_zdjecia.nil?) then link = link_to "Kliknij", x + u.sciezka_do_zdjecia.split('/').to_a.pop, :confirm => "Czy na pewno?" end %><%= link %></td> 
+ <tr>
+ <% end %>
+</table>

@@ -1,0 +1,38 @@
+<div class="info">Dodawanie dokumentow</div>
+<p class="desc">Ta zakladka sluzy do zgrywania zdjec oraz ich opisu <br />
+(Uwaga!: Rozmiar zdjecia, [badz pliku innego typu] nie powinien przekroczyc 600kB</br ><br />
+
+ <% if(flash[:send]) %> 
+  <p class="added"><%= flash[:send] %></p>
+ <% end %>
+<table>
+ <% form_tag( { :action => 'addNew'},  {:multipart => true }) do %>
+ <tr>
+   <td>Powiazanie wydarzenie:</td>
+   <td><%= select( :doc, :id_wydarzenia, Events.EventsToHashMapHelper(@currentEvents) ) %></td>
+ </tr>
+
+ <tr>
+   <td>Data utworzenia:</td>
+   <td><%= text_field :doc, :data_zrobienia %></td>
+ </tr>
+
+ <tr>
+   <td>Komefntarz do zalacznika:</td>
+   <td><%= text_area :doc, :opis %></td>
+ </tr>
+
+ <tr>
+  <td>Zdjecie: </td>
+  <td><%= file_field 'upload', 'datafile' %></td>
+ </tr>
+
+ <tr>
+  <td>Utworz: </td><td><%= submit_tag 'Utworz' %></td>
+ </tr>
+
+ <% end %> 
+</table>
+
+
+

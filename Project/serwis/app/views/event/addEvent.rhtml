@@ -1,0 +1,28 @@
+<div class="info">Dodawanie wydarzen</div>
+<p class="desc">Tutaj mozna dodawac nowe wydarzenia (pamietaj, aby date wpisac w postaci rrrr/mm/dd)</p>
+ <%= error_messages_for :object => [@events] rescue nil %>
+ <p class="added"><%= flash[:send] unless flash[:send].nil? %></p>
+ <table>
+ <tr>
+ <% form_tag  :action => 'addEvent' do %>
+    <td>Miejsce:</td>
+    <td><%= text_field :events, :miejsce %></td>
+ </tr>
+ <tr>
+  <td>Rodzaj wydarzenia:</td>
+  <td><%= select( :events, :typ, { "Pogrzeb" => 0, "Slub" => 1, "Rozwod" => 2}) %></td>
+ </tr>
+ <tr>
+   <td>Data:</td>
+   <td><%= text_field :events, :data %></td>
+ </tr>
+
+ <% if flash[:send].nil?  %>
+ <tr>
+  <td>Utworz: </td><td><%= submit_tag 'Utworz'%></td>
+ </tr>
+ <% end %> 
+
+ <% end %> 
+
+</table>

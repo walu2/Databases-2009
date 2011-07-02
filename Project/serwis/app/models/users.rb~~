@@ -1,0 +1,9 @@
+class Users < ActiveRecord::Base
+  set_table_name :osoba
+  set_primary_key :id
+  has_one :users_data
+  
+ def self.getAllDataFromUsers
+   find(:all, :order => "nazwisko ASC", :include => [:plec, :miejsce_urodzenia])
+ end
+end

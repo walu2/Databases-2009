@@ -1,0 +1,108 @@
+class UsersController < ApplicationController
+ 
+  def show
+    @alive = Users.getAllAlive 
+    @dead = Users.getAllDead
+  end
+
+  def new
+   @users = Users.new
+   @profiles = UserData.new
+  end
+
+  def index
+  end
+
+  def addNew
+   if request.post? & flash[:send].nil? then
+    @users = Users.new(params[:users])
+    @profiles = @users.build_users_data(params[:profiles])
+
+     if @profiles.valid? & @users.valid? then
+    
+         if params[:dead] = 0 then @profiles.powod_zgonu = @profiles.data_smierci = nil; end;
+
+         if @users.id_ojca == -1 then @users.id_ojca = nil; end
+         if @users.id_matki == -1 then @users.id_matki = nil; end
+
+         imie = params[:users][:imie]
+
+        @profiles.plec = (imie[imie.size-1].to_i == 97)?'k':'m';
+
+      Users.transaction do # begin transaction
+        @users.save!
+        @profiles.save! 
+       end
+
+      flash[:send] = params.inspect # "Uzytkownik dodany pomyslnie!"
+       
+    #   redirect_to :action => 'show'; return nil
+     end
+   
+    #render :action => 'addNew'; return nil;
+   end
+  end
+
+  def editById
+
+    @curId = params[:id] 
+    @users = Users.find_by_id(@curId); 
+    
+   if @curId.nil? or @users.nil? then 
+     redirect_to(:action => 'errorPage', :status => 404); return nil;   end
+
+    @profiles = @users.users_data
+
+     if request.post? && flash[:send].nil? then
+        
+       if  @users.update_attributes(params[:users]) && @profiles.update_attributes(params[:profiles]) then 
+
+            if @users.id_ojca == -1 then @users.id_ojca = nil; end
+            if @users.id_matki == -1 then @users.id_matki = nil; end
+
+            if @profiles.powod_zgonu  == "" then @profiles.powod_zgonu = nil; end
+            if @profiles.data_smierci == "" then @profiles.data_smierci = nil; end
+
+           @users.save!
+           @profiles.save!
+          flash[:send] = "Zmiany zostaly wprowadzone!"
+       end
+    
+     end
+  end
+
+  def stillAlive
+    render :text => "Jest git!"
+  end
+
+  def error
+    render :text => "wystapil blad"
+  end
+
+  def profilDetails
+    if !params[:id].nil? then 
+      id = params[:id]
+      
+      data = Users.getInfoAboutPerson(id)  
+ 
+      @result = data unless data.nil?
+
+    else 
+     redirect_to :action => 'errorPage', :status => 404
+    end
+  end
+
+  def errorPage
+   render :text => "Podano niewlasciwy adres, badz bledny parametr ;[ (sprawdz prosze, ponownie adres)"
+  end
+
+before_filter :fetch_params_values
+
+private
+
+def fetch_params_values
+  # create another hash to handle querystring
+  @params = request.query_string
+end
+
+end

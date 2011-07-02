@@ -1,0 +1,13 @@
+class UsersData < ActiveRecord::Base
+  set_table_name :dane_osobowe
+  set_primary_key :osoba_id
+  belongs_to :users, :foreign_key => "id"
+
+  validates_presence_of  :miejsce_urodzenia => 'Brakuje miejsca..'
+
+
+   def validate
+     errors.add_on_empty %w( miejsce_urodzenia ) 
+   end
+
+end

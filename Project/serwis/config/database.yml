@@ -1,0 +1,20 @@
+development:
+ adapter: postgresql
+ database: spadki
+ username: postgres
+ password: bazy2009
+ host: localhost
+
+test:
+ adapter: postgresql
+ database: spadki
+ username: postgres
+ password: bazy2009
+ host: localhost
+
+production:
+ adapter: postgresql
+ database: spadki
+ username: postgres
+ password: bazy2009
+ host: localhost

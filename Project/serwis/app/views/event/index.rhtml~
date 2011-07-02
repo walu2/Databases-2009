@@ -1,0 +1,10 @@
+<div class="info">Panel zarzadzania wydarzeniami</div>
+<p class="desc">Tutaj mozesz zarzadzac wydarzeniami, w tej chwili mozesz przejsc do nastepujacych podstron: <br /><br />
+ <%= link_to "Dodawanie wydarzen", {:action => "addEvent" } %> - gdzie mozesz dodac zupelnie nowe wydarzenie.<br />
+ <%= link_to "Przeglad zapisanych wydarzen", {:action => "showEvents" } %> - tutaj mozna przejrzec istniejace wydarzenia.<br />
+ <%= link_to "Przypisywanie uzytkownikow do wydarzen", {:action => "addUserEvent" } %> - sluzy do laczenia wydarzenia z osoba.<br />
+
+ <%= link_to "Dodawanie dokumentow", {:controller => "eventfiles", :action => "addNew"} %> - mozna wgrac dokumenty odnoszace sie do pewnego wydarzenia<br />
+
+<%= link_to "Przeglad dokumentow", {:controller => "eventfiles", :action => "allEventFiles"} %> - mozna wgrac dokumenty odnoszace sie do pewnego wydarzenia
+</p>

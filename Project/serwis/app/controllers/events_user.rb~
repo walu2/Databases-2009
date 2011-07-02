@@ -1,0 +1,26 @@
+class EventsUserController < ApplicationController
+
+ def new
+  @events = EventUser.new
+ end
+
+
+ def addUserEvent
+   if request.post? & flash[:send].nil? then
+    @events = EventUser.new(params[:users])
+
+     if @events.valid? then
+      @events.save! 
+     end
+
+      flash[:send] = true; 
+       
+       redirect_to :action => 'showEvents'; return nil
+   end
+ end
+
+ def showEvents
+  render :text => "dodane wydarzenia..."
+ end
+
+end

@@ -1,0 +1,54 @@
+<div class="info">Edycja uzytkownikorw:</div>
+<p class="desc">Tutaj z kolei mozesz dowolnie edytowac poszczegolnych czlonkow rodziny.</p>
+
+ <%= error_messages_for :object => [@users, @profiles] rescue nil %>
+    <%= '<p class="added">' + flash[:send] + '</p>' unless flash[:send].nil?  %>
+ <table>
+
+ <tr>
+ <% form_tag :action => 'editById', :id => @curId do %>
+    <td>Imie:</td>
+    <td><%= text_field :users, :imie %></td>
+ </tr>
+ <tr>
+  <td>Nazwisko:</td>
+  <td><%= text_field :users, :nazwisko %></td>
+ </tr>
+ <tr>
+   <td>Miejsce urodzenia:</td>
+   <td><%= text_field :profiles, :miejsce_urodzenia %></td>
+ </tr>
+ <tr>
+   <td>Data urodzenia:</td>
+   <td><%= text_field :profiles, :data_urodzenia %></td>
+ </tr>
+ <tr>
+   <td>Adres:</td>
+   <td><%= text_field :profiles, :aktualny_adres %></td>
+ </tr>
+ <tr>
+  <td>Ojciec uzytkownika: </td>
+  <td><%= select( :users, :id_ojca, Users.getAllPeoplesBySex('m') ) %></td></td>
+ </tr>
+ <tr>
+  <td>Matka uzytkownika: </td>
+  <td><%= select( :users, :id_matki, Users.getAllPeoplesBySex('k') ) %></td></td>
+ </tr>
+ <tr>
+  <td><b>UWAGA:</b></td>
+  <td><p class="desc">Wpisujac cokolwiek w ponizsze pole osoba od razu zmienia status na <b>zmarly</b></p></td>
+ </tr>
+ <tr>
+   <td>Powod zgonu:</td>
+   <td><%= text_area :profiles, :powod_zgonu, :cols => 35, :rows => 4 %></td>
+ </tr>
+ <tr>
+   <td>Data smierci:</td>
+   <td><%= text_field :profiles, :data_smierci %></td>
+ </tr>
+ <tr>
+  <td>Aktualizuj: </td><td><%= submit_tag 'OK' %></td>
+ </tr>
+ <% end %> 
+
+</table>

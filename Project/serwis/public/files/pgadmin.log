@@ -1,0 +1,765 @@
+2009-05-29 00:23:51 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-29 00:23:58 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-29 00:24:06 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-29 00:24:12 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2009-05-29 00:24:43 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2009-05-29 00:24:47 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-29 00:24:52 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-29 00:24:56 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-29 00:32:12 ERROR  : Could not resolve hostname 127.0.0.1/32
+2009-05-29 00:35:45 ERROR  : ERROR:  table "wybor" does not exist
+2009-05-29 00:36:08 ERROR  : ERROR:  syntax error at or near "IF"
+LINE 1: DROP IF EXISTS TABLE wybor;
+             ^
+2009-05-29 00:37:16 ERROR  : ERROR:  syntax error at or near "="
+LINE 2: WHERE imie LIKE = '%Piotr';
+                        ^
+2009-05-29 00:39:02 ERROR  : ERROR:  syntax error at or near "ORDER"
+LINE 3: ORDER BY semestr;
+        ^
+2009-05-29 00:39:32 ERROR  : ERROR:  column "uzytkownik.nazwisko" must appear in the GROUP BY clause or be used in an aggregate function
+2009-05-29 00:40:14 ERROR  : ERROR:  aggregates not allowed in GROUP BY clause
+2009-05-29 00:41:15 ERROR  : ERROR:  column "uzytkownik.nazwisko" must appear in the GROUP BY clause or be used in an aggregate function
+2009-05-29 00:42:03 ERROR  : ERROR:  aggregates not allowed in GROUP BY clause
+2009-05-29 00:42:38 ERROR  : ERROR:  syntax error at or near "'ile'"
+LINE 1: SELECT nazwisko, sum(semestr) as 'ile'
+                                         ^
+2009-05-29 00:42:52 ERROR  : ERROR:  column "uzytkownik.imie" must appear in the GROUP BY clause or be used in an aggregate function
+2009-05-29 00:43:10 ERROR  : ERROR:  column "uzytkownik.semestr" must appear in the GROUP BY clause or be used in an aggregate function
+2009-05-29 00:43:34 ERROR  : ERROR:  syntax error at or near "'ilu'"
+LINE 1: SELECT imie, nazwisko, count(semestr) as 'ilu'
+                                                 ^
+2009-05-29 00:43:43 ERROR  : ERROR:  syntax error at or near "'ilu'"
+LINE 1: SELECT imie, nazwisko, count(semestr) as 'ilu'
+                                                 ^
+2009-05-29 00:43:44 ERROR  : ERROR:  syntax error at or near "'ilu'"
+LINE 1: SELECT imie, nazwisko, count(semestr) as 'ilu'
+                                                 ^
+2009-05-29 00:43:44 ERROR  : ERROR:  syntax error at or near "'ilu'"
+LINE 1: SELECT imie, nazwisko, count(semestr) as 'ilu'
+                                                 ^
+2009-05-29 00:45:57 ERROR  : ERROR:  syntax error at or near "ASC"
+LINE 4: GROUP BY semestr ASC;
+                         ^
+2009-05-29 00:46:01 ERROR  : ERROR:  syntax error at or near "DESC"
+LINE 4: GROUP BY semestr DESC;
+                         ^
+2009-05-29 00:46:02 ERROR  : ERROR:  syntax error at or near "DESC"
+LINE 4: GROUP BY semestr DESC;
+                         ^
+2009-05-29 00:46:02 ERROR  : ERROR:  syntax error at or near "DESC"
+LINE 4: GROUP BY semestr DESC;
+                         ^
+2009-05-29 00:47:33 ERROR  : ERROR:  column "uzytkownik.nazwisko" must appear in the GROUP BY clause or be used in an aggregate function
+2009-05-29 00:47:50 ERROR  : ERROR:  column "uzytkownik.imie" must appear in the GROUP BY clause or be used in an aggregate function
+2009-05-30 02:00:07 ERROR  : ERROR:  syntax error at or near "file"
+LINE 1: file:///home/prezes/Desktop/definicja_spadki.sql
+        ^
+2009-05-30 02:00:49 ERROR  : ERROR:  syntax error at or near "WITH CASCADE"
+LINE 357:  ) WITH CASCADE CHECK OPTION;
+             ^
+2009-05-30 02:01:01 ERROR  : ERROR:  syntax error at or near "WITH CASCADE"
+LINE 357:  ) WITH CASCADE CHECK OPTION;
+             ^
+2009-05-30 02:01:13 ERROR  : ERROR:  WITH CHECK OPTION is not implemented
+2009-05-30 02:01:18 ERROR  : ERROR:  syntax error at or near ";"
+LINE 357:  ) WITH CHECK ;
+                        ^
+2009-05-30 02:01:22 ERROR  : ERROR:  syntax error at or near "WITH CASCADE"
+LINE 364:  ) WITH CASCADE CHECK OPTION;
+             ^
+2009-05-30 02:01:35 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:05:28 ERROR  : ERROR:  syntax error at or near "//"
+LINE 357:  ) ; //WITH CASCADE CHECK OPTION;
+               ^
+2009-05-30 02:05:36 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:06:20 ERROR  : ERROR:  syntax error at or near "CREATE"
+LINE 164: CREATE OR REPLACE FUNCTION okresl_plec(id_uzytkownika INT) R...
+          ^
+2009-05-30 02:07:09 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:08:01 ERROR  : ERROR:  syntax error at or near "DROP"
+LINE 10: DROP TABLE IF EXISTS OSOBA;
+         ^
+2009-05-30 02:08:03 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:08:09 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:14:56 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:16:00 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:16:00 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 02:35:21 ERROR  : There is nothing in the SQL pane to save!
+2009-05-30 02:35:35 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "piotr"
+
+2009-05-30 02:35:40 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "piotr"
+
+2009-05-30 02:35:51 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+
+2009-05-30 02:47:33 ERROR  : ERROR:  syntax error at or near "WITH CASCADE"
+LINE 357:  ) WITH CASCADE CHECK OPTION;
+             ^
+2009-05-30 02:47:52 ERROR  : ERROR:  syntax error at or near "WITH ;"
+LINE 364:  ) WITH ;
+             ^
+2009-05-30 02:47:54 ERROR  : ERROR:  syntax error at or near "WITH ;"
+LINE 364:  ) WITH ;
+             ^
+2009-05-30 02:47:59 ERROR  : ERROR:  language "plpgsql" does not exist
+HINT:  Use CREATE LANGUAGE to load the language into the database.
+2009-05-30 03:05:27 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:07:01 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:07:49 ERROR  : ERROR:  null value in column "testament" violates not-null constraint
+
+2009-05-30 03:07:57 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:08:25 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:08:59 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:09:18 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:09:41 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:09:53 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:10:10 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:10:19 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:10:26 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:10:34 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:10:52 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:11:22 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:11:27 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:11:43 ERROR  : ERROR:  null value in column "nazwisko" violates not-null constraint
+
+2009-05-30 03:12:20 ERROR  : ERROR:  duplicate key value violates unique constraint "osoba_key"
+
+2009-05-30 03:12:21 ERROR  : ERROR:  duplicate key value violates unique constraint "osoba_key"
+
+2009-05-30 03:13:01 ERROR  : ERROR:  duplicate key value violates unique constraint "osoba_key"
+
+2009-05-30 03:20:23 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: ...R TABLE dane_osobowe ADD CONSTRAINT id_osoba PRIMARY KEY ();
+                                                                     ^
+
+2009-05-30 03:20:40 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: ...R TABLE dane_osobowe ADD CONSTRAINT id_osoba PRIMARY KEY ();
+                                                                     ^
+
+2009-05-30 03:21:17 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: ...ABLE dane_osobowe ADD CONSTRAINT pk_id_osoba PRIMARY KEY ();
+                                                                     ^
+
+2009-05-30 03:21:31 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: ...ABLE dane_osobowe ADD CONSTRAINT pk_id_osoba PRIMARY KEY ();
+                                                                     ^
+
+2009-05-30 03:22:34 ERROR  : ERROR:  relation "osoba_id_seq" does not exist
+
+2009-05-30 03:22:43 ERROR  : ERROR:  relation "osoba_id_seq" does not exist
+
+2009-05-30 03:22:51 ERROR  : ERROR:  relation "osoba_id_seq" does not exist
+
+2009-05-30 03:24:29 ERROR  : ERROR:  cannot drop table dane_osobowe because other objects depend on it
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2009-05-30 03:24:38 ERROR  : ERROR:  syntax error at or near "CASCADE"
+LINE 1: DROP CASCADE TABLE dane_osobowe;
+             ^
+2009-05-30 03:24:45 ERROR  : ERROR:  syntax error at or near "CASCADE"
+LINE 1: CASCADE DROP  TABLE dane_osobowe;
+        ^
+2009-05-30 03:24:50 ERROR  : ERROR:  syntax error at or near "dane_osobowe"
+LINE 1: DROP  TABLE CASCADE dane_osobowe;
+                            ^
+2009-05-30 03:26:53 ERROR  : ERROR:  null value in column "id_osoba" violates not-null constraint
+
+2009-05-30 03:28:23 ERROR  : ERROR:  date/time field value out of range: "20.04.1960"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:28:35 ERROR  : ERROR:  date/time field value out of range: "20.04.1960"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:28:46 ERROR  : ERROR:  date/time field value out of range: "04.60.1999"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:28:57 ERROR  : ERROR:  date/time field value out of range: "22.02.1960"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:29:05 ERROR  : ERROR:  date/time field value out of range: "22/02/1960"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:29:08 ERROR  : ERROR:  date/time field value out of range: "22/02/1960"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:29:38 ERROR  : ERROR:  null value in column "id_osoba" violates not-null constraint
+
+2009-05-30 03:33:48 ERROR  : ERROR:  date/time field value out of range: "19.05.1984"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:33:58 ERROR  : ERROR:  date/time field value out of range: "19.05.1984"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 03:34:11 ERROR  : ERROR:  invalid input syntax for integer: "ul. Hallera 43"
+
+2009-05-30 03:34:13 ERROR  : ERROR:  invalid input syntax for integer: "ul. Hallera 43"
+
+2009-05-30 03:37:18 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 4: okresl_plec();
+        ^
+2009-05-30 03:37:23 ERROR  : ERROR:  function okresl_plec() does not exist
+LINE 4: SELECT okresl_plec();
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2009-05-30 03:39:13 ERROR  : ERROR:  column dane_osobowe.osoba_id does not exist
+LINE 2: JOIN dane_osobowe ON osoba.id = dane_osobowe.osoba_id;
+                                        ^
+2009-05-30 14:49:47 ERROR  : ERROR:  relation "dokumenty_id_seq" does not exist
+2009-05-30 14:53:11 ERROR  : ERROR:  invalid input syntax for type timestamp: "curr_timestamp"
+
+2009-05-30 14:53:12 ERROR  : ERROR:  invalid input syntax for type timestamp: "curr_timestamp"
+
+2009-05-30 14:53:48 ERROR  : ERROR:  date/time field value out of range: "15.11.1999"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 14:53:50 ERROR  : ERROR:  date/time field value out of range: "15.11.1999"
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2009-05-30 14:55:03 ERROR  : ERROR:  column "id_osoba" does not exist
+LINE 1: SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 ...
+                                                     ^
+QUERY:  SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 )
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 7 at assignment
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 14:55:07 ERROR  : ERROR:  column "id_osoba" does not exist
+LINE 1: SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 ...
+                                                     ^
+QUERY:  SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 )
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 7 at assignment
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 14:55:10 ERROR  : ERROR:  column "id_osoba" does not exist
+LINE 1: SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 ...
+                                                     ^
+QUERY:  SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 )
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 7 at assignment
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 14:55:51 ERROR  : ERROR:  column "id_osoba" does not exist
+LINE 1: SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 ...
+                                                     ^
+QUERY:  SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 )
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 7 at assignment
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 14:56:48 ERROR  : ERROR:  operator does not exist: integer == integer
+LINE 1: SELECT ( $1  == 0)
+                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+QUERY:  SELECT ( $1  == 0)
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 18 at IF
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 14:57:36 ERROR  : ERROR:  operator does not exist: integer == integer
+LINE 1: SELECT ( $1  == 0)
+                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+QUERY:  SELECT ( $1  == 0)
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 18 at IF
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 14:59:30 ERROR  : ERROR:  column "id_osoba" does not exist
+LINE 1: SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 ...
+                                                     ^
+QUERY:  SELECT  (SELECT plec FROM DANE_OSOBOWE WHERE id_osoba =  $1 )
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 7 at assignment
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:00:04 ERROR  : ERROR:  Podano niewlasciwa pare.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:00:41 ERROR  : ERROR:  Podano niewlasciwa pare.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:02:27 ERROR  : ERROR:  Podano niewlasciwa pare.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:02:34 ERROR  : ERROR:  Podano niewlasciwa pare.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:10:01 ERROR  : ERROR:  missing FROM-clause entry for table "para_os_wyd"
+LINE 1: ..._wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wy...
+                                                             ^
+QUERY:  SELECT WYDARZENIE.typ as T, OSOBA_WYDARZENIE.rola_priorytet as P FROM wydarzenie JOIN OSOBA_WYDARZENIE ON OSOBA_WYDARZENIE.id_wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wyd.wydarzenie_id
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 13 at SQL statement
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:10:02 ERROR  : ERROR:  missing FROM-clause entry for table "para_os_wyd"
+LINE 1: ..._wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wy...
+                                                             ^
+QUERY:  SELECT WYDARZENIE.typ as T, OSOBA_WYDARZENIE.rola_priorytet as P FROM wydarzenie JOIN OSOBA_WYDARZENIE ON OSOBA_WYDARZENIE.id_wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wyd.wydarzenie_id
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 13 at SQL statement
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:10:05 ERROR  : ERROR:  missing FROM-clause entry for table "para_os_wyd"
+LINE 1: ..._wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wy...
+                                                             ^
+QUERY:  SELECT WYDARZENIE.typ as T, OSOBA_WYDARZENIE.rola_priorytet as P FROM wydarzenie JOIN OSOBA_WYDARZENIE ON OSOBA_WYDARZENIE.id_wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wyd.wydarzenie_id
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 13 at SQL statement
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:11:41 ERROR  : ERROR:  missing FROM-clause entry for table "para_os_wyd"
+LINE 1: ..._wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wy...
+                                                             ^
+QUERY:  SELECT WYDARZENIE.typ as T, OSOBA_WYDARZENIE.rola_priorytet as P FROM wydarzenie JOIN OSOBA_WYDARZENIE ON OSOBA_WYDARZENIE.id_wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wyd.wydarzenie_id
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 13 at SQL statement
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:11:43 ERROR  : ERROR:  missing FROM-clause entry for table "para_os_wyd"
+LINE 1: ..._wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wy...
+                                                             ^
+QUERY:  SELECT WYDARZENIE.typ as T, OSOBA_WYDARZENIE.rola_priorytet as P FROM wydarzenie JOIN OSOBA_WYDARZENIE ON OSOBA_WYDARZENIE.id_wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wyd.wydarzenie_id
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 13 at SQL statement
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:11:45 ERROR  : ERROR:  missing FROM-clause entry for table "para_os_wyd"
+LINE 1: ..._wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wy...
+                                                             ^
+QUERY:  SELECT WYDARZENIE.typ as T, OSOBA_WYDARZENIE.rola_priorytet as P FROM wydarzenie JOIN OSOBA_WYDARZENIE ON OSOBA_WYDARZENIE.id_wydarzenia = WYDARZENIE.id WHERE WYDARZENIE.id = para_os_wyd.wydarzenie_id
+CONTEXT:  PL/pgSQL function "zwroc_sformatowana_nazwe_roli" line 13 at SQL statement
+PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:12:37 ERROR  : ERROR:  Podano niewlasciwa pare.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:12:46 ERROR  : ERROR:  Podano niewlasciwa pare.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 8 at assignment
+
+2009-05-30 15:13:10 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:14:03 ERROR  : ERROR:  NEW used in query that is not in a rule
+QUERY:  SELECT  NEW.rola_priorytet
+CONTEXT:  SQL statement in PL/PgSQL function "zwroc_sformatowana_nazwe_roli" near line 13
+
+2009-05-30 15:14:29 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:14:41 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:14:47 ERROR  : ERROR:  OLD used in query that is not in a rule
+QUERY:  SELECT  OLD.rola_priorytet
+CONTEXT:  SQL statement in PL/PgSQL function "zwroc_sformatowana_nazwe_roli" near line 13
+
+2009-05-30 15:15:57 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:17:03 ERROR  : ERROR:  syntax error at or near "-"
+LINE 12:   NEW.rola_pelna_nazwa := 'aaa';- nazwa;
+                                         ^
+
+2009-05-30 15:17:12 ERROR  : ERROR:  syntax error at or near "-"
+LINE 12:   NEW.rola_pelna_nazwa := "aaa";- nazwa;
+                                         ^
+
+2009-05-30 15:18:59 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:19:44 ERROR  : ERROR:  trigger "ustal_pelna_nazwe_roli" for relation "osoba_wydarzenie" already exists
+2009-05-30 15:19:54 ERROR  : ERROR:  syntax error at or near "ALTER"
+LINE 1: ...E TRIGGER ustal_pelna_nazwe_roli BEFORE INSERT OR ALTER ON O...
+                                                             ^
+2009-05-30 15:19:59 ERROR  : ERROR:  syntax error at or near "ALTER"
+LINE 1: ...E TRIGGER ustal_pelna_nazwe_roli BEFORE INSERT OR ALTER TRIG...
+                                                             ^
+2009-05-30 15:20:21 ERROR  : ERROR:  syntax error at or near "ustal_pelna_nazwe_roli"
+LINE 1: DROP ustal_pelna_nazwe_roli;
+             ^
+2009-05-30 15:20:28 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: DROP TRIGGER ustal_pelna_nazwe_roli;
+                                           ^
+2009-05-30 15:20:29 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: DROP TRIGGER ustal_pelna_nazwe_roli;
+                                           ^
+2009-05-30 15:20:29 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: DROP TRIGGER ustal_pelna_nazwe_roli;
+                                           ^
+2009-05-30 15:20:29 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: DROP TRIGGER ustal_pelna_nazwe_roli;
+                                           ^
+2009-05-30 15:21:00 ERROR  : ERROR:  relation "osoba_wydarzenia" does not exist
+2009-05-30 15:21:46 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:21:50 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:22:02 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:22:04 ERROR  : ERROR:  null value in column "rola_priorytet" violates not-null constraint
+
+2009-05-30 15:22:54 ERROR  : ERROR:  trigger "ustal_pelna_nazwe_roli" for table "osoba_wydarzenie" does not exist
+2009-05-30 15:25:03 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:25:07 ERROR  : ERROR:  null value in column "rola_priorytet" violates not-null constraint
+
+2009-05-30 15:27:17 ERROR  : ERROR:  trigger "ustal_pelna_nazwe_roli" for relation "osoba_wydarzenie" already exists
+2009-05-30 15:29:16 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:29:19 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:29:20 ERROR  : ERROR:  null value in column "rola_priorytet" violates not-null constraint
+
+2009-05-30 15:29:22 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:29:23 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:29:25 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:29:28 ERROR  : ERROR:  record "old" is not assigned yet
+DETAIL:  The tuple structure of a not-yet-assigned record is indeterminate.
+CONTEXT:  PL/pgSQL function "ustal_nazwe_roli" line 10 at assignment
+
+2009-05-30 15:31:31 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:31:35 ERROR  : ERROR:  null value in column "rola_priorytet" violates not-null constraint
+
+2009-05-30 15:31:39 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:31:41 ERROR  : ERROR:  null value in column "id_wydarzenia" violates not-null constraint
+
+2009-05-30 15:31:43 ERROR  : ERROR:  null value in column "rola_priorytet" violates not-null constraint
+
+2009-05-30 15:32:34 ERROR  : No Table or view.
+2009-05-30 15:32:39 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:32:41 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:32:47 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:32:55 ERROR  : ERROR:  duplicate key value violates unique constraint "wybor_key"
+
+2009-05-30 15:33:04 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:34:53 ERROR  : ERROR:  null value in column "rola_priorytet" violates not-null constraint
+
+2009-05-30 15:37:27 ERROR  : ERROR:  new row for relation "osoba_wydarzenie" violates check constraint "priorytet_stale"
+
+2009-05-30 15:38:56 ERROR  : ERROR:  syntax error at or near "ELSEIF"
+LINE 32:  ELSEIF(wynik.typ_wyd = 1) THEN
+          ^
+
+2009-05-30 15:39:15 ERROR  : ERROR:  syntax error at or near "ELSEIF"
+LINE 32:  ELSEIF(wynik.typ_wyd = 1) THEN
+          ^
+
+2009-05-30 15:39:53 ERROR  : ERROR:  cannot drop function ustal_nazwe_roli() because other objects depend on it
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2009-05-30 19:22:32 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2009-05-30 19:23:31 ERROR  : ERROR:  syntax error at or near "BY"
+LINE 3: ORDERY BY 1 asc;
+               ^
+2009-05-30 19:24:14 ERROR  : ERROR:  column "%Bi" does not exist
+LINE 3: WHERE u.nazwisko LIKE "%Bi"
+                              ^
+2009-05-30 19:26:24 ERROR  : ERROR:  column "kod_przed" specified in USING clause does not exist in left table
+2009-05-30 19:26:41 ERROR  : ERROR:  column reference "kod_uz" is ambiguous
+LINE 1: SELECT kod_uz, grupa, przedmiot
+               ^
+2009-05-30 19:26:45 ERROR  : ERROR:  column "przedmiot" does not exist
+LINE 1: SELECT wybor.kod_uz, grupa, przedmiot
+                                    ^
+2009-05-30 19:26:46 ERROR  : ERROR:  column "przedmiot" does not exist
+LINE 1: SELECT wybor.kod_uz, grupa, przedmiot
+                                    ^
+2009-05-30 19:26:47 ERROR  : ERROR:  column "przedmiot" does not exist
+LINE 1: SELECT wybor.kod_uz, grupa, przedmiot
+                                    ^
+2009-05-30 19:26:47 ERROR  : ERROR:  column "przedmiot" does not exist
+LINE 1: SELECT wybor.kod_uz, grupa, przedmiot
+                                    ^
+2009-05-30 19:27:29 ERROR  : ERROR:  subquery must return only one column
+2009-05-30 19:33:13 ERROR  : ERROR:  more than one row returned by a subquery used as an expression
+2009-05-30 19:33:52 ERROR  : ERROR:  more than one row returned by a subquery used as an expression
+2009-06-03 13:13:32 ERROR  : ERROR:  relation "wybor" does not exist
+2009-06-16 22:21:36 ERROR  : ERROR:  ORDER BY position 0 is not in select list
+2009-06-22 22:40:00 ERROR  : ERROR:  null value in column "id" violates not-null constraint
+
+2009-06-22 22:40:01 ERROR  : ERROR:  null value in column "id" violates not-null constraint
+
+2009-06-22 22:40:03 ERROR  : ERROR:  null value in column "id" violates not-null constraint
+
+2009-06-22 22:40:14 ERROR  : ERROR:  null value in column "imie" violates not-null constraint
+
+2009-06-22 22:40:50 ERROR  : ERROR:  relation "osobo" does not exist
+2009-06-22 22:40:54 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_wydarzenie_profil" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(35) is still referenced from table "osoba_wydarzenie".
+2009-06-22 22:42:13 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(98) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:15 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(97) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:15 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(96) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:15 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(95) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:26 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(100) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:27 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(99) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:28 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(98) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:29 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(97) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:29 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(96) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:30 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(95) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:30 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(94) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:31 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(93) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:31 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(92) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:31 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(91) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:32 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(90) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:32 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(89) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:32 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(88) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:33 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(87) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:33 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(86) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:33 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(85) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:33 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(84) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:34 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(83) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:34 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(82) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:34 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(81) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:34 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(80) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:35 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(79) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:35 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(78) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:35 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(77) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:36 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(76) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:36 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(75) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:36 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(74) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:36 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(73) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:37 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(72) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:37 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(71) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:37 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(70) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:38 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(69) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:38 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(59) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:39 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(55) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:42:39 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_wydarzenie_profil" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(35) is still referenced from table "osoba_wydarzenie".
+
+2009-06-22 22:43:14 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(91) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:15 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(90) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:15 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(89) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:15 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(88) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:18 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(87) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:18 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(86) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:18 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(85) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:19 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(84) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:19 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(83) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:19 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(82) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:20 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(81) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:20 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(80) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:20 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(79) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:20 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(78) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:21 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(77) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:21 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(76) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:21 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(75) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:21 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(74) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:21 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(73) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:21 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(72) is still referenced from table "dane_osobowe".
+
+2009-06-22 22:43:22 ERROR  : ERROR:  update or delete on table "osoba" violates foreign key constraint "fk_osoba_dane_osoby" on table "dane_osobowe"
+DETAIL:  Key (id)=(71) is still referenced from table "dane_osobowe".
+
+2009-06-23 00:56:47 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 1: okresl_plec(4);
+        ^
+2009-06-23 00:56:52 ERROR  : ERROR:  control reached end of function without RETURN
+CONTEXT:  PL/pgSQL function "okresl_plec"
+2009-06-23 00:56:52 ERROR  : ERROR:  control reached end of function without RETURN
+CONTEXT:  PL/pgSQL function "okresl_plec"
+2009-06-23 00:56:53 ERROR  : ERROR:  control reached end of function without RETURN
+CONTEXT:  PL/pgSQL function "okresl_plec"
+2009-06-23 00:56:53 ERROR  : ERROR:  control reached end of function without RETURN
+CONTEXT:  PL/pgSQL function "okresl_plec"
+2009-06-23 00:56:58 ERROR  : ERROR:  prepared statement "okresl_plec" does not exist
+2009-06-23 00:56:58 ERROR  : ERROR:  prepared statement "okresl_plec" does not exist
+2009-06-23 00:56:58 ERROR  : ERROR:  prepared statement "okresl_plec" does not exist
+2009-06-23 00:56:59 ERROR  : ERROR:  prepared statement "okresl_plec" does not exist
+2009-06-23 00:57:11 ERROR  : ERROR:  syntax error at or near "4"
+LINE 1: PREPARE okresl_plec(4);
+                            ^
+2009-06-23 00:57:11 ERROR  : ERROR:  syntax error at or near "4"
+LINE 1: PREPARE okresl_plec(4);
+                            ^
+2009-06-23 00:57:12 ERROR  : ERROR:  syntax error at or near "4"
+LINE 1: PREPARE okresl_plec(4);
+                            ^
+2009-06-23 00:57:12 ERROR  : ERROR:  syntax error at or near "4"
+LINE 1: PREPARE okresl_plec(4);
+                            ^
+2009-06-23 00:57:16 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: PREPARE okresl_plec();
+                            ^
+2009-06-23 00:57:16 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: PREPARE okresl_plec();
+                            ^
+2009-06-23 00:57:16 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: PREPARE okresl_plec();
+                            ^
+2009-06-23 00:57:23 ERROR  : ERROR:  syntax error at or near "5"
+LINE 1: PREPARE okresl_plec(5);
+                            ^
+2009-06-23 00:57:27 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 1: okresl_plec(5);
+        ^
+2009-06-23 00:57:27 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 1: okresl_plec(5);
+        ^
+2009-06-23 00:57:28 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 1: okresl_plec(5);
+        ^
+2009-06-23 00:57:28 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 1: okresl_plec(5);
+        ^
+2009-06-23 00:57:28 ERROR  : ERROR:  syntax error at or near "okresl_plec"
+LINE 1: okresl_plec(5);
+        ^
+2009-06-23 01:11:25 ERROR  : ERROR:  update or delete on table "wydarzenie" violates foreign key constraint "fk_osoba_wydarzenie_wydarzenie" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(43) is still referenced from table "osoba_wydarzenie".
+
+2009-06-23 01:11:26 ERROR  : ERROR:  update or delete on table "wydarzenie" violates foreign key constraint "fk_osoba_wydarzenie_wydarzenie" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(42) is still referenced from table "osoba_wydarzenie".
+
+2009-06-23 01:11:27 ERROR  : ERROR:  update or delete on table "wydarzenie" violates foreign key constraint "fk_osoba_wydarzenie_wydarzenie" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(41) is still referenced from table "osoba_wydarzenie".
+
+2009-06-23 01:11:27 ERROR  : ERROR:  update or delete on table "wydarzenie" violates foreign key constraint "fk_osoba_wydarzenie_wydarzenie" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(39) is still referenced from table "osoba_wydarzenie".
+
+2009-06-23 01:11:27 ERROR  : ERROR:  update or delete on table "wydarzenie" violates foreign key constraint "dokumenty_wydarzenie" on table "dokumenty"
+DETAIL:  Key (id)=(38) is still referenced from table "dokumenty".
+
+2009-06-23 01:11:27 ERROR  : ERROR:  update or delete on table "wydarzenie" violates foreign key constraint "fk_osoba_wydarzenie_wydarzenie" on table "osoba_wydarzenie"
+DETAIL:  Key (id)=(37) is still referenced from table "osoba_wydarzenie".
+

@@ -1,0 +1,29 @@
+class EventController < ApplicationController
+
+ def new
+  @events = Events.new
+ end
+
+ def add
+  render :text => "xX"
+ end
+
+ def addEvent
+   if request.post? & flash[:send].nil? then
+    @events = Events.new(params[:users])
+
+     if @events.valid? then
+      @events.save! 
+     end
+
+      flash[:send] = true; 
+       
+       redirect_to :action => 'showEvents'; return nil
+   end
+ end
+
+ def showEvents
+  render :text => "dodane wydarzenia..."
+ end
+
+end

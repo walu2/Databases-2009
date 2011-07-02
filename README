@@ -1,0 +1,14 @@
+As in title of this was mentioned, it contains my materials of 'database' course taught at my university in year 2009.
+
+* Folder 'SQL practice' - contains some SQL code (During course we write in 'postgreSQL') which is solution to exercises during 'practical' part of course.
+  
+* Folder 'Project' - It's final application build on basis of guidelines set up during 'theorical' part of course. 
+
+   Project must have contains: 
+    * Text documentation 
+    * Conceptual model
+    * Entity ED (entity - data) model
+    * SQL code 
+    * main application
+
+My project was nothing interesing (in sense of application, the database [what was the main issue of this project] is a little more interesting ;)), but mention worth is that it was my first 'ruby on rails' application ever I created. The version was 2.0.2.

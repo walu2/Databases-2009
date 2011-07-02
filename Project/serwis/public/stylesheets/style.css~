@@ -1,0 +1,230 @@
+body {
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: small;
+   font-color: #000;
+   background-color: #cccccc;
+}
+a:link, a:active, a:visited {
+   color: maroon;
+}
+input { 
+   margin-bottom: 5px;
+}
+p { 
+   line-height: 150%;
+}
+
+div#container {
+   width: 650px;
+   margin: 0 auto;
+}
+
+div#header {
+   text-align: center;
+   padding-bottom: 2px;
+   color: #fffcca;
+   background-color: #214243;
+   border: 1px dashed #fffcca;
+   margin-bottom: 10px;
+   border-bottom: none;
+}
+
+div#linker {
+   text-align: center;
+   color: #fffcca;
+   text-weight: solid;
+   padding: 4px 0 4px 0;
+   background-color: #217050;
+   border: 1px dashed #fffcca;
+   border-top: none;
+   margin-top: -10px;
+   margin-bottom: 4px;
+}
+
+div#footer {
+   padding-top: 4px;
+   padding-bottom: 4px;
+   margin-top: 8px;
+   background-color: #214243;
+   border: 1px dashed #fffcca;
+   text-align: center;
+}
+
+.info {
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: #214243;
+   margin-bottom: 8px;
+}
+
+.info {
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: red;
+   margin-bottom: 8px;
+}
+
+
+
+.desc {
+   font-size: 12px;
+   font-style: italic;
+   text-align: left;
+   color: #214243;
+   margin-bottom: 8px;
+   padding-bottom: 3px;
+   border-bottom: 1px solid #fffcca;
+}
+
+
+.errorExplanation {
+  background-color: #214243;
+  border: 2px solid #fffcca;
+  font-size: small;
+  color: white;
+  margin-bottom: 6px;
+}
+
+div#errorExplanation h2 {
+ text-align: center;
+}
+
+div#errorExplanation p {
+ text-align: center;
+}
+
+div#content {
+   width: 550px;
+   padding: 5px;
+   border: 2px dotted #fffcca;
+   margin: 0 auto;
+}
+
+div#content h3 {
+   margin-top: 15px;
+}
+/* from shared.css */
+
+table.table-silver, table.table-red, table.table-blue , table.table-green  {
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: auto;
+	margin: 10px 0 10px 0;
+	float: none;
+	display: table;
+}
+
+.table-silver caption, .table-red caption, .table-blue caption, .table-green caption {
+	font-size: 100%;
+	font-style: italic;
+	caption-side: top;
+	padding: 2px 0 2px 0.5em;
+	page-break-after: avoid;
+}
+
+.table-silver td, .table-silver th,
+.table-red td, .table-red th,
+.table-blue td, .table-blue th,
+.table-green td, .table-green th
+{
+	font-size: 100%;
+	padding: 0.25em 0.5em;
+	vertical-align: middle;
+}
+
+.table-silver td, .table-red td, .table-red td, .table-green td {
+	border: 1px solid #C2C6CD;
+}
+
+.table-silver th, .table-silver thead td, .table-silver tfoot td, .table-silver td.trhead,
+.table-red th, .table-red thead td, .table-red tfoot td, .table-red td.trhead,
+.table-blue th, .table-blue thead td, .table-blue tfoot td, .table-blue td.trhead,
+.table-green th, .table-green thead td, .table-green tfoot td, .table-green td.trhead
+{
+	background: none;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+/* */
+
+table.table-silver {
+	background-color: #fafafa;
+}
+
+.table-silver td {
+	border: 1px solid #C2C6CD;
+	
+}
+
+.table-silver th, .table-silver thead td, .table-silver tfoot td, .table-silver td.trhead {
+	background-color: #e5e5e5;
+	color: #333333;
+}
+
+/* */
+
+table.table-red {
+	background-color: #f2dada;
+	color: #9c1f1f;
+}
+
+.table-red td, .table-red th {
+	border: 1px solid #9c1f1f;
+}
+
+.table-red td {
+	border: 1px solid #b34747;
+	
+}
+
+.table-red th, .table-red thead td, .table-red tfoot td, .table-red td.trhead {
+	background-color: #e5b8b8;
+	color: #800000;
+}
+
+/* */
+
+table.table-blue {
+	background-color: #e6e8f2;
+	color: #5c6699;
+}
+
+.table-blue td, .table-blue th {
+	border: 1px solid #8f99cc;
+}
+
+.table-blue td {
+	border: 1px solid #8f99cc;
+	
+}
+
+.table-blue th, .table-blue thead td, .table-blue tfoot td, .table-blue td.trhead {
+	background-color: #b8bed9;
+	color: #3d4466;
+}
+
+/* */
+
+table.table-green {
+	background-color: #e4f2da;
+	color: #62804d;
+}
+
+.table-green td, .table-green th {
+	border: 1px solid #b4cca3;
+}
+
+.table-green td {
+	border: 1px solid #b4cca3;
+	
+}
+
+.table-green th, .table-green thead td, .table-green tfoot td, .table-green td.trhead {
+	background-color: #c6d9b8;
+	color: #3b4d2e;
+}
+
+

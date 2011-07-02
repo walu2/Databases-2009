@@ -1,0 +1,40 @@
+<div class="info">Wiazanie wydarzenia z uczestnikami.</div>
+<p class="desc">W tym miejscu mozesz powiazac konkretne istniejace wydarzenie z osoba.<br />
+Jesli brakuje wydarzenia. mozesz je <%= link_to "dodac", {:action => "addEvent"}%> i nastepnie wroci. <br />
+Tak samo mozesz <%= link_to "zrobic", {:controller => "users", :action => "addNew"}%> jesli chcesz dodac nowego uzytkownika.
+<br />
+<b>
+<br />
+
+</p>
+
+ <%= error_messages_for :object => [@userEvents] rescue nil %>
+ 
+ <table>
+ <% if(flash[:send]) %> 
+  <p class="added"><%= flash[:send] %></p>
+ <% end %>
+ 
+ <tr>
+ <% form_tag  :action => 'addUserEvent' do %>
+  <td>Wybierz uzytkownika:</td>
+  <td><%= select( :userEvent, :id_osoby, Events.UserToHashMapHelper(@currentUsers), :onchange => 'alert("lol")' ) %></td>
+ </tr>
+ <tr>
+   <td>Wybierz wydarzenie:</td>
+   <td><%= select( :userEvent, :id_wydarzenia, Events.EventsToHashMapHelper(@currentEvents) ) %></td></td>
+ </tr>
+ <tr><td colspan="3">Poziom zwiazania:</td></tr>
+ <tr>
+  <td>Bezposrednio<%= radio_button(:userEvent, :rola_priorytet, 0, {:checked => TRUE }) %></td>
+  <td>Posrednio<%= radio_button(:userEvent, :rola_priorytet, 1) %></td>
+  <td>Gosc<%= radio_button(:userEvent, :rola_priorytet, 2) %></td>
+ </tr>
+
+ <% unless(flash[:send]) %>  
+ <tr>
+  <td>Utworz: </td><td><%= submit_tag 'Utworz' %></td>
+ </tr>
+ <% end %> 
+<% end %>
+</table>
